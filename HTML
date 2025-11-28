@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Simple Library Dashboard</h1>
+    </header>
+
+    <main>
+        <section id="book-management">
+            <h2>Book Management</h2>
+            <form id="add-book-form">
+                <input type="text" id="book-title" placeholder="Title" required>
+                <input type="text" id="book-author" placeholder="Author" required>
+                <input type="text" id="book-isbn" placeholder="ISBN" required>
+                <button type="submit">Add Book</button>
+            </form>
+            <h3>Current Books</h3>
+            <table id="book-list">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </section>
+        
+        <hr>
+
+        <section id="member-management">
+            <h2>Member Management</h2>
+            <form id="add-member-form">
+                <input type="text" id="member-name" placeholder="Member Name" required>
+                <input type="text" id="member-id" placeholder="Member ID" required>
+                <button type="submit">Add Member</button>
+            </form>
+            <h3>Current Members</h3>
+            <ul id="member-list">
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Simple LMS Frontend</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
